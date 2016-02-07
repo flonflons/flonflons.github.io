@@ -1,0 +1,115 @@
+/* == General */
+
+.text-justify {
+  -moz-hyphens: auto;
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+.spacer-20 {
+  margin-top: 20px;
+}
+
+.spacer-40 {
+  margin-top: 40px;
+}
+
+.spacer-80 {
+  margin-top: 80px;
+}
+
+.debug {
+  border: solid 1px red;
+}
+
+
+/* == Colors */
+
+.color-sellout-pink {
+  background-color: #DB2766;
+}
+
+.color-orange {
+  color: #d34817;
+}
+
+
+/* == Fonts */
+
+@font-face {
+  font-family: "Linux Biolinum";
+  src: url('/assets/fonts/LinBiolinum_R.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Linux Biolinum";
+  font-style: italic;
+  src: url('/assets/fonts/LinBiolinum_RI.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Linux Biolinum";
+  font-weight: bold;
+  src: url('/assets/fonts/LinBiolinum_RB.woff') format('woff');
+}
+
+body {
+  font-family: 'Linux Biolinum';
+  font-size: 16px;
+}
+
+
+/* == Sections */
+
+
+.footer {
+  background-color: #2e3436;
+  color: #eeeeec;
+  margin-top : 2em;
+  padding-bottom : 2em;
+  padding-top : 2em;
+}
+
+.footer h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.footer i {
+  background-color: #666666;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer a {
+  color: #eeeeec;
+}
+
+.circled-icon i {
+  background-color: #eeeeec;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 2px;
+  vertical-align: middle;
+}
+
+.circled-icon a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title-section {
+  background-color: #d34817;
+  color: white;
+}
+
