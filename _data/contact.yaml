@@ -1,7 +1,10 @@
 photo:
-  url: /assets/images/flonflons.png
-  name: Photo École des flonflons
+  url: /assets/images/mascotte.png
+  name: Photo Éco Ferme des flonflons
+logo:
+  url: /assets/images/logo.jpg
+  name: Logo Éco Ferme des flonflons
 email: "ecofermedesflonflons@free.fr"
-phone: "06 50 28 33 40"
+phone: "06 82 38 30 51"
 address: "1 grande rue, 25640 le puy"
 facebook: https://www.facebook.com/ecofermedesflonflons/
