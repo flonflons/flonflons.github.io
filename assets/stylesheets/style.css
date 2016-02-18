@@ -94,6 +94,44 @@
     border-color: #d34817;
 }
 
+
+.services {
+  margin: 10px;
+  padding: 1em;
+  border-radius: 6px;
+  height: 300px;
+}
+
+.section-animalier {
+  background-color: #9b2d1f;
+  color: white;
+}
+
+.section-culturel {
+  background-color: #993d1e;
+  color: white;
+}
+
+.section-restauration {
+  background-color: #dd6555;
+  color: white;
+}
+
+.section-ferme {
+  background-color: #a4653f;
+  color: white;
+}
+
+.section-jeux {
+  background-color: #d34817;
+  color: white;
+}
+
+
+
+
+
+
 .section-production {
   background-color: #9b2d1f;
   color: white;

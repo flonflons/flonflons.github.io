@@ -1,5 +1,56 @@
 ---
 layout: default
+services:
+- name: Animalier
+  class: section-animalier
+  items:
+  - poneys shetlands, falabella
+  - Anes micro miniatures américains
+  - Chèvres toys, moutons ouessant
+  - Volailles naines
+  - Cochons
+  - vaches micro miniatures dexter, highland casttle
+  - Abeilles
+  - Alpagas
+- name: Culturel
+  class: section-culturel
+  items:
+  - Jardin thérapeutique
+  - Bibliothèque
+  - Formations pédagogiques
+  - Concerts
+  - Animations été enfants
+  - Accueil personnes dépendantes temporaire
+  - Animation musicales
+  - Musicothérapie /relaxation
+- name: Restauration
+  class: section-restauration
+  items:
+  - Boissons fraiches
+  - Boissons chaudes
+  - Salon de thé
+  - Coin toilettes
+  - Soirées animées repas unique weekend (soir)
+  - Salades en été
+  - Patrimoine culinaire franc-comtois
+- name: Produits fermiers
+  class: section-ferme
+  items:
+  - Miel
+  - Confitures et sirop
+  - Produits fermiers
+  - Poulets rotis
+  - Ventes d’animaux vivants suite à reproduction
+- name: Jeux
+  class: section-jeux
+  items:
+  - Tyrolienne
+  - Jeux extérieurs
+  - Jeux société géants
+  - Appareils motricité personnes âgées
+  - Minigolf
+  - Espace détente
+
 ---
 <div class="container">
   <div class="row">
@@ -31,45 +82,22 @@ layout: default
     </div>
   </div>
   <div class="spacer-40"></div>
-  <div class="row">
-    <div class="col-md-4 col-xs-6">
-      <div class="section-production">
-        <h3 class="text-center">Production</h2>
-        <ul>
-          <li>maraîchage</li>
-          <li>Petits animaux</li>
-          <li>lapins et volailles</li>
-          <li>Anes, poneys, alpagas</li>
-          <li>Chèvres, moutons</li>
-          <li>Mini vaches</li>
-          <li>abeilles</li>
-        </ul>
-        <p class="text-center">{{service.description}}</p>
-      </div>
-      <div class="spacer-20"></div>
-    </div>
-    <div class="col-md-4 col-xs-6">
-      <div class="section-vente">
-        <h3 class="text-center">Vente</h2>
-        <p>Par abonnements et Paniers fermiers sur place</p>
-        <p>Restauration à la ferme dont produits maraichers, confitures et sirop, miel, fromage, lapins, poulets, oeufs<p>
-        </div>
-        <div class="spacer-20"></div>
-      </div>
-      <div class="col-md-4 col-xs-6">
-        <div class="section-pedagogie">
-          <h3 class="text-center">Accueil pédagogique</h2>
-          <ul>
-            <li>Animations pédagogiques</li>
-            <li>musique à la ferme</li>
-            <li>Jardin thérapeutique</li>
-            <li>Activités d'accompagnement et de répit personnes dépendantes</li>
-            <li>jeux en bois</li>
-            <li>sport nature / aire pique - nique</li>
-            <li>amphitheatre</li>
-          </ul>
-        </div>
-        <div class="spacer-20"></div>
-      </div>
-    </div>
-  </div>
+
+
+  {% for service in page.services %}
+      {% cycle 'add row' : '<div class="row">', nil, nil %}
+          <div class="col-md-4 col-xs-6">
+            <div class="services {{service.class}}">
+              <h3 class="text-center">{{service.name}}</h3>
+              <ul>
+              {% for item in service.items %}
+                <li>{{item}}</li>
+              {% endfor %}
+              </ul>
+              <p class="text-center">{{service.description}}</p>
+            </div>
+          </div>
+      {% cycle 'end row' : nil, nil, '</div>' %}
+  {% endfor %}
+  {% cycle 'end row' : nil, '</div>', '</div>' %}
+</div>
