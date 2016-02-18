@@ -126,32 +126,3 @@
   background-color: #d34817;
   color: white;
 }
-
-
-
-
-
-
-.section-production {
-  background-color: #9b2d1f;
-  color: white;
-  padding: 1em;
-  border-radius: 6px;
-  height: 250px;
-}
-
-.section-vente {
-  background-color: #a4653f;
-  color: white;
-  padding: 1em;
-  border-radius: 6px;
-  height: 250px;
-}
-
-.section-pedagogie {
-  background-color: #d34817;
-  color: white;
-  padding: 1em;
-  border-radius: 6px;
-  height: 250px;
-}
